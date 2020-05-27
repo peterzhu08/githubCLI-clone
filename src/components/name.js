@@ -11,8 +11,10 @@ class Name extends Component {
   }
 
   clickHandler() {
-    // console.log(data);
-    this.setState({ msg: "Hello Nabib" });
+    const name = this.state.people.name.first;
+    const message = "Hello ".concat(name);
+    console.log(message);
+    this.setState({ msg: message });
   }
 
   async componentDidMount() {
