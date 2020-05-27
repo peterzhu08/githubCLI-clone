@@ -28,7 +28,7 @@ class Name extends Component {
     return (
       <React.Fragment>
         <h1>{this.state.msg}</h1>
-        <button onClick={this.clickHandler.bind(this)}>Update</button>
+        <button onClick={() => this.clickHandler()}>Update</button>
       </React.Fragment>
     );
   }

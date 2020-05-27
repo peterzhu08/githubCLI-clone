@@ -8,4 +8,11 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // Component Method of Hello World
 import Name from "./components/name";
-ReactDOM.render(<Name />, document.getElementById("root"));
+import Time from "./components/time";
+ReactDOM.render(
+  <div>
+    <Name />
+    <Time />
+  </div>,
+  document.getElementById("root")
+);
