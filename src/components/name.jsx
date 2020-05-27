@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 
 class Name extends Component {
+  state = {
+    msg: "Hello World",
+  };
+
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
+      <React.Fragment>
+        <h1>{this.state.msg}</h1>
         <button>Name</button>
-      </div>
+      </React.Fragment>
     );
   }
 }
